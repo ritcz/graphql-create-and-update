@@ -4,7 +4,7 @@ import { Router } from "./Router";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "https://4000-ritcz-idealwaffle-xam6o5nasl1.ws-us38.gitpod.io/",
+  uri: "/graphql",
   cache: new InMemoryCache(),
 });
 
