@@ -1,0 +1,23 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "GraphQL Server for to-do demo application",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "C. Zoellick",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "apollo-server": "^3.6.4",
+    "express": "^4.17.3",
+    "graphql": "^16.3.0",
+    "graphql-scalars": "^1.15.0",
+    "sequelize": "^6.17.0",
+    "sqlite3": "^5.0.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "todo-demo",
+  "version": "1.0.0",
+  "description": "Demo To-Do full stack application",
+  "main": "index.js",
+  "scripts": {
+    "start": "lerna exec --parallel npm run start"
+  },
+  "author": "C. Zoellick",
+  "license": "UNLICENSED"
+}

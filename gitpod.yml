@@ -1,0 +1,21 @@
+ports:
+  - port: 3000
+    onOpen: open-browser
+    visibility: public
+  - port: 4000
+    onOpen: open-browser
+    # making this public so that we can benefit from apollo studio
+    visibility: public
+
+tasks:
+  - name: Startup
+    before: npm i -g lerna
+    init: lerna bootstrap
+    command: lerna exec --parallel npm run start
+
+vscode:
+  extensions:
+    - dsznajder.es7-react-js-snippets
+    - esbenp.prettier-vscode
+    - graphql.vscode-graphql
+    - dbaeumer.vscode-eslint
