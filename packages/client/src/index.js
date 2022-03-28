@@ -4,7 +4,7 @@ import { Router } from "./Router";
 import { ApolloClient, ApolloProvider, InMemoryCache } from "@apollo/client";
 
 const client = new ApolloClient({
-  uri: "/graphql",
+  uri: "/graphql/",
   cache: new InMemoryCache(),
 });
 

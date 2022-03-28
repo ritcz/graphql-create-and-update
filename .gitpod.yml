@@ -16,7 +16,7 @@ tasks:
     init: lerna bootstrap
     command: lerna exec --parallel npm run start
   - name: Start NGINX
-    command: nginx
+    command: gp await-port 3000 && nginx
 
 vscode:
   extensions:
